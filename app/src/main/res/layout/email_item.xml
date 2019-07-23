@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view_bg"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/txt_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            tools:text="F" />
+
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/txt_icon"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/txt_icon"
+            android:textColor="@color/darkerGray"
+            android:textSize="18sp"
+            android:layout_toStartOf="@id/txt_date"
+            tools:text="Facebook" />
+
+        <TextView
+            android:id="@+id/txt_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_user"
+            android:layout_alignStart="@id/txt_user"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@color/darkerGray"
+            android:textSize="16sp"
+            tools:text="Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook Facebook" />
+
+
+        <TextView
+            android:id="@+id/txt_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_subject"
+            android:layout_alignStart="@id/txt_user"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@color/darkerGray"
+            android:textSize="16sp"
+            android:layout_marginEnd="24dp"
+            tools:text="Preview Preview" />
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:textColor="@color/darkerGray"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            tools:text="20 mai"/>
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:src="@drawable/ic_star_border_black_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
